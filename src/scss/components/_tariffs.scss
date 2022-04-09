@@ -1,0 +1,94 @@
+.tariffs {
+  padding-bottom: 139px;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 4 span;
+    border: 1px solid rgb(20 16 36 / 20%);
+    border-radius: 20px;
+    padding: 40px;
+
+    &--current {
+      border: 1px solid var(--dark-color);
+      border-radius: 20px;
+      background-color: var(--dark-color);
+      transform: scaleY(1.1);
+
+      .tariffs__subtitle {
+        color: var(--light-color);
+      }
+
+      .tariffs__price {
+        color: var(--light-color);
+      }
+
+      .tariffs__descr {
+        color: var(--light-color);
+      }
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 62px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    color: var(--dark-color);
+
+    &::before {
+      content: "";
+      display: block;
+      margin-right: 10px;
+      width: 20px;
+      height: 3px;
+      background-color: currentcolor;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      margin-left: 10px;
+      width: 20px;
+      height: 3px;
+      background-color: currentcolor;
+    }
+  }
+
+  &__price {
+    margin-bottom: 22px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.6;
+    color: var(--dark-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--dark-color);
+  }
+
+  &__btn {
+    margin-top: 31px;
+    min-width: 100%;
+  }
+}

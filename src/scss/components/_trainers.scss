@@ -1,0 +1,69 @@
+.trainers {
+  &__content {
+    margin-bottom: 77px;
+  }
+
+  &__image {
+    margin-bottom: 16px;
+    border-radius: 20px;
+    max-height: 500px;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.6;
+    color: var(--dark-color);
+  }
+
+  &__position {
+    margin-bottom: 22px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+  }
+
+  &__btn {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--accent-color);
+  }
+
+  &__scroll {
+    border-radius: 40px;
+    width: 360px;
+    height: 5px;
+    background: rgb(20 16 36 / 8%);
+  }
+
+  .swiper-scrollbar-drag {
+    background-color: var(--dark-color)
+  }
+
+  &__btns {
+    @include flex-end;
+
+    margin-top: -22px;
+    padding-right: 10px;
+  }
+
+  &__slider-btn {
+    @include bg-cover;
+
+    width: 40px;
+    height: 40px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &--prev {
+      background-image: url("../img/prev.svg");
+    }
+
+    &--next {
+      background-image: url("../img/next.svg");
+    }
+  }
+}

@@ -1,0 +1,23 @@
+// базові підключення
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// підключення компонентів сторінки
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/benefits";
+@import "./components/trainers";
+@import "./components/section-title";
+@import "./components/btn";
+@import "./components/tariffs";
+@import "./components/order";
+
+// підключення малих компонентів сторінки
+@import "./components/nav";
+@import "./components/phone";
+@import "./components/tooltip";
+@import "./components/modals";
+@import "./components/form";
