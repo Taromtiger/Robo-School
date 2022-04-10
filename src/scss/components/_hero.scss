@@ -1,11 +1,8 @@
 .hero {
-  padding-top: 344px;
-  padding-bottom: 410px;
+  position: relative;
+  padding-top: 162px;
+  padding-bottom: 409px;
   min-height: 800px;
-  background-image: url("../img/hero-img.png");
-  background-position: bottom right;
-  background-size: contain;
-  background-repeat: no-repeat;
   background-color: var(--dark-color);
 
   &__container {
@@ -13,7 +10,15 @@
   }
 
   &__content {
+    z-index: 10;
+    padding-top: 182px;
     max-width: 516px;
+  }
+
+  &__image {
+    position: absolute;
+    z-index: 5;
+    transform: translateX(69.5%);
   }
 
   &__title {

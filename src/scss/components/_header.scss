@@ -8,4 +8,8 @@
   &__container {
     @include flex-all-sb;
   }
+
+  .logo {
+    z-index: 10;
+  }
 }

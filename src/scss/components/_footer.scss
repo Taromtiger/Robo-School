@@ -1,0 +1,25 @@
+.footer {
+  padding: 40px 0;
+  background-color: var(--dark-color);
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 14px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__left {
+    padding-top: 10px;
+  }
+
+  &__copy {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(255 255 255 / 70%);
+  }
+}
