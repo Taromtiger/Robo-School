@@ -1,5 +1,5 @@
 .tariffs {
-  padding-bottom: 139px;
+  padding-bottom: 140px;
 
   &__title {
     margin-bottom: 80px;
@@ -9,6 +9,14 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include high-tablet {
+      gap: 20px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
 
   &__item {
@@ -37,6 +45,18 @@
       .tariffs__descr {
         color: var(--light-color);
       }
+
+      @include high-tablet {
+        transform: scaleY(1);
+      }
+    }
+
+    @include high-tablet {
+      padding: 23px;
+    }
+
+    @include small-tablet {
+      grid-column: 12 span;
     }
   }
 
@@ -76,6 +96,10 @@
     font-size: 50px;
     line-height: 1.6;
     color: var(--dark-color);
+
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &__descr {
@@ -90,5 +114,14 @@
   &__btn {
     margin-top: 31px;
     min-width: 100%;
+
+    @include high-tablet {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+
+  @include mobile {
+    padding-bottom: 60px;
   }
 }

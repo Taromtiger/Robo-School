@@ -6,21 +6,29 @@
       <img class="image" loading="lazy" src="img/logo.svg" width="228" height="48" alt="Логотип школы Robo school">
     </a>
 
-    <nav class="nav" title="Главное меню">
+    <nav class="nav" title="Главное меню" data-menu>
       <ul class="nav__list list-reset">
         <li class="nav__item">
-          <a class="nav__link" href="#about" data-scroll>О школе</a>
+          <a class="nav__link" href="#about" data-scroll data-menu-item>О школе</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#trainers" data-scroll>Тренеры</a>
+          <a class="nav__link" href="#trainers" data-scroll data-menu-item>Тренеры</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#price" data-scroll>Стоимость</a>
+          <a class="nav__link" href="#price" data-scroll data-menu-item>Стоимость</a>
         </li>
       </ul>
     </nav>
 
-    <a class="phone" href="tel:+78000001122">+7 800 000 11 22</a>
+    <button class="btn-reset burger-close" aria-label="Закрыть меню" data-menu-close></button>
+
+    <a class="header__phone phone" href="tel:+78000001122">+7 800 000 11 22</a>
+
+    <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
 
   </div>
 

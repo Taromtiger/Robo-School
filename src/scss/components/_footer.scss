@@ -5,21 +5,44 @@
   &__logo {
     display: inline-block;
     margin-bottom: 14px;
+
+    @include mobile {
+      width: 136px;
+      height: 29px;
+    }
   }
 
   &__container {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__left {
-    padding-top: 10px;
+    padding-top: 13px;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__phone {
+    font-size: 16px;
   }
 
   &__copy {
     font-size: 16px;
     line-height: 1.6;
     color: rgb(255 255 255 / 70%);
+
+    @include mobile {
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
   }
 }

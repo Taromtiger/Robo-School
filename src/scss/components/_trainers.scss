@@ -1,4 +1,12 @@
 .trainers {
+  &__title {
+    @include mobile {
+      font-size: 30px;
+      line-height: 1.4;
+      text-align: center;
+    }
+  }
+
   &__content {
     margin-bottom: 77px;
   }
@@ -7,6 +15,23 @@
     margin-bottom: 16px;
     border-radius: 20px;
     max-height: 500px;
+
+    @include high-desktop {
+      max-height: 423px;
+    }
+
+    @include high-tablet {
+      max-height: 408px;
+    }
+
+    @include small-tablet {
+      max-height: 305px;
+    }
+
+    @include mobile {
+      max-width: 290px;
+      max-height: 402px;
+    }
   }
 
   &__name {
@@ -35,6 +60,10 @@
     width: 360px;
     height: 5px;
     background: rgb(20 16 36 / 8%);
+
+    @include mobile {
+      width: 300px;
+    }
   }
 
   .swiper-scrollbar-drag {
@@ -46,6 +75,10 @@
 
     margin-top: -22px;
     padding-right: 10px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__slider-btn {

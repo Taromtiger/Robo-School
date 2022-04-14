@@ -5,20 +5,23 @@
 @import "settings";
 
 // підключення компонентів сторінки
+@import "./components/phone";
+@import "./components/section-title";
+@import "./components/btn";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about";
 @import "./components/benefits";
 @import "./components/trainers";
-@import "./components/section-title";
-@import "./components/btn";
 @import "./components/tariffs";
 @import "./components/order";
 @import "./components/footer";
+@import "./components/popup";
 
 // підключення малих компонентів сторінки
 @import "./components/nav";
-@import "./components/phone";
 @import "./components/tooltip";
 @import "./components/modals";
 @import "./components/form";
+@import "./components/burger";
+@import "./components/social";

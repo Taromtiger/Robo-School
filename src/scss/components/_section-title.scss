@@ -5,4 +5,10 @@
   font-size: 50px;
   line-height: 1.6;
   color: var(--dark-color);
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 1.4;
+    text-align: center;
+  }
 }

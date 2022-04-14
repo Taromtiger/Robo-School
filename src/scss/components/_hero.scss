@@ -13,12 +13,36 @@
     z-index: 10;
     padding-top: 182px;
     max-width: 516px;
+
+    @include high-tablet {
+      max-width: none;
+    }
+
+    @include mobile {
+      padding-top: 55px;
+      text-align: center;
+    }
   }
 
   &__image {
     position: absolute;
     z-index: 5;
     transform: translateX(69.5%);
+
+    @include high-desktop {
+      transform: translateX(60%);
+    }
+
+    @include high-tablet {
+      display: none;
+    }
+
+    @include mobile {
+      left: 50%;
+      display: inline-block;
+      width: 85%;
+      transform: translateX(-50%) translateY(68%);
+    }
   }
 
   &__title {
@@ -38,6 +62,31 @@
       font-size: 20px;
       line-height: 1.6;
       text-transform: initial;
+
+      @include mobile {
+        max-width: none;
+        font-size: 16px;
+      }
     }
+
+    @include mobile {
+      margin-bottom: 280px;
+      font-size: 30px;
+    }
+  }
+
+  &__link {
+    padding: 16px 55px;
+    width: 100%;
+  }
+
+  @include high-tablet {
+    padding-bottom: 100px;
+    min-height: auto;
+  }
+
+  @include mobile {
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
 }
